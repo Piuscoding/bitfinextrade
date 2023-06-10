@@ -1,0 +1,39 @@
+<%- include('partials/dashboardHeader')%>
+
+<div class="account-container">
+    
+    <div class="image-container">
+        <img src="IMG/profile.png" alt="">
+        
+        <div class="image-container-bio">
+            <h5>pius</h5>
+            <strong>Bio</strong>
+            <p>Hi, my name is <%=user.fullname %> , below are the information i supplied during my BITFOREXTRADE Registration.</p>
+        </div>
+
+        <div class="below-container">
+            <div class="date">
+                <h5>Date Joined BITINSTANTTRADE</h5>
+                <p><%=user.createdAt %></p>
+            </div>
+            <div class="details">
+                <p>Fullname:<b><%=user.fullname %></b></p>
+                <p>profileId:<b><%=user._id %></b></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-container-header">
+            <h5>contact</h5>
+            <p>Mobile:<b><%=user.tel %></b></p>
+            <p>Email:<b><%=user.email %></b></p>
+        </div>
+    </div>
+
+
+
+</div>
+
+<%- include('partials/dashboardFooter')%>
